@@ -4,9 +4,9 @@ const observer = new IntersectionObserver(
     (items) => {
         items.forEach((item) => {
             if (item.isIntersecting) {
-                console.log(item.target, "is visible");
+                console.log(`${item.target} is visible`);
             } else {
-                console.log(item.target, "is not visible");
+                console.log(`${item.target} is not visible`);
             }
         });
     },
